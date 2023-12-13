@@ -1,0 +1,137 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-family: Inter
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    /* margin: 0 auto; */
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    padding: 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    
+    /* display: block; */
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"] {
+    background-color: #6c757d;
+}
+
+input[type="reset"]:hover {
+    background-color: #545b62;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+}
+.credit-card-form{
+    /* float: right; */
+    margin-left: 55%;
+    margin-top: -51%;
+   
+}
+.center-line {
+    width: 3px; /* Width of the line */
+    background-color: black; /* Color of the line */
+    height: 35em; /* Height of the line */
+    position: absolute; /* Positioning it absolutely */
+    left: 50%; /* Centering it horizontally */
+    top: 55%; /* Centering it vertically */
+    transform: translateY(-50%); /* Adjusts the position to truly center the line vertically */
+}
+h3{
+   text-align: center;
+}
+.user-info-form{
+    margin-top: -10px;
+    margin-left: 40px;
+
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    float: right;
+    /* margin-right: 10%; */
+}
+
+.main-nav li {
+    margin: 15px 3px 0 0;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: -5%;
+
+}
+
+.main-nav a { 
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    padding: 12px 30px;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+/* Add other styles like hover effects as needed */
+.main-nav a:hover {
+    background-color: black;
+    color: white; /* Example hover color */
+}
