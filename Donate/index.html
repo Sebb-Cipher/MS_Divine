@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Denim Foundation| Donate </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <ul>
+            < <li><a href="../final_project/index.html" target="_blank">Home</a></li>
+            <li><a href="../Aboutus/index.html" target="_blank">About Us</a></li>
+            <li><a href="" target="_blank">Donate</a></li>
+            <li><a href="../testimonials/index.html" target="_blank">Testimonial</a></li>
+        </ul>
+    </nav>
+    
+
+<form action="test.php" method="post" class="user-info-form">
+    <fieldset>
+        <legend>User Information</legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Address Details</legend>
+        <label for="address1">Address line 1:</label>
+        <input type="text" id="address1" name="address1" required><br>
+
+        <label for="address2">Address line 2:</label>
+        <input type="text" id="address2" name="address2"><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br>
+
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+            <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+    <option value="DE">Delaware</option>
+    <option value="FL">Florida</option>
+    <option value="GA">Georgia</option>
+    <option value="HI">Hawaii</option>
+    <option value="ID">Idaho</option>
+    <option value="IL">Illinois</option>
+    <option value="IN">Indiana</option>
+    <option value="IA">Iowa</option>
+    <option value="KS">Kansas</option>
+    <option value="KY">Kentucky</option>
+    <option value="LA">Louisiana</option>
+    <option value="ME">Maine</option>
+    <option value="MD">Maryland</option>
+    <option value="MA">Massachusetts</option>
+    <option value="MI">Michigan</option>
+    <option value="MN">Minnesota</option>
+    <option value="MS">Mississippi</option>
+    <option value="MO">Missouri</option>
+    <option value="MT">Montana</option>
+    <option value="NE">Nebraska</option>
+    <option value="NV">Nevada</option>
+    <option value="NH">New Hampshire</option>
+    <option value="NJ">New Jersey</option>
+    <option value="NM">New Mexico</option>
+    <option value="NY">New York</option>
+    <option value="NC">North Carolina</option>
+    <option value="ND">North Dakota</option>
+    <option value="OH">Ohio</option>
+    <option value="OK">Oklahoma</option>
+    <option value="OR">Oregon</option>
+    <option value="PA">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="TN">Tennessee</option>
+    <option value="TX">Texas</option>
+    <option value="UT">Utah</option>
+    <option value="VT">Vermont</option>
+    <option value="VA">Virginia</option>
+    <option value="WA">Washington</option>
+    <option value="WV">West Virginia</option>
+    <option value="WI">Wisconsin</option>
+    <option value="WY">Wyoming</option>
+        </select><br>
+
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="zip" required pattern="\d{5}(-\d{4})?"><br>
+    </fieldset>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments"></textarea><br>
+
+    <label for="agreeTerms">
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+        I agree to the terms & conditions <br>
+    </label><br> <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+     
+</form>
+     <div class="center-line"></div>
+
+<div class="credit-card-form">
+    <form action="/submit-donation" method="post">
+
+        <fieldset>
+            <legend>Donate</legend>
+            <label for="fullName">Name on Card:</label>
+            <input type="text" placeholder="John Doe" id="fullName" name="fullName" required><br>
+    
+            <label for="email">Card Number</label>
+            <input type="email" id="email" name="email" placeholder="0000 0000 0000 0000" required><br>
+    
+            <label for="">Expiration Month</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="">Expiration Year</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="">CVV</label>
+            <input type="text" id="CVV" name="dob" placeholder="123" required><br>
+        </fieldset>
+
+        <!-- <h3>Donate with Credit Card</h3> -->
+
+        <!-- <label for="cardName">Name on Card</label>
+        <input type="text" id="cardName" name="cardName" required>
+
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+
+        <label for="expMonth">Expiration Month</label>
+        <input type="text" id="expMonth" name="expMonth" required>
+
+        <label for="expYear">Expiration Year</label>
+        <input type="text" id="expYear" name="expYear" required>
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" required>
+
+        <input type="submit" value="Donate Now">
+     -->
+        </form>
+</div>
+</body>
+</html>
